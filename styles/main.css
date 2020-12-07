@@ -1,0 +1,470 @@
+#containertop{
+
+    position: relative;
+    left: 0px;
+    right: 0px; 
+    top: -15px;
+    height: 40px;
+    width: 1440px;
+    /* left: 0px; */
+    /* top: 0px; */
+    border-radius: 0px;
+
+    /* bottom: 0px;  */
+    
+    /* Sowingo_white */
+    
+    background: #FFFFFF;
+    
+}
+
+#favbtn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 138px;
+    bottom: 16px;
+    
+    /* Sow-Grey/700 */
+    
+    border: 2px solid #4E6374;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+.material-icons {
+    vertical-align: middle;
+    color: blueviolet;
+}
+      
+
+#image{
+position: absolute;
+/* width: 18.71px;
+height: 18.71px; */
+left: 156.1px;
+top: 20px;
+
+/*background: url(../../image.png);*/
+}
+
+#nav_sticky {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 6%;
+    bottom: 10%;
+    height: 48px;
+    width: 1440px;
+    /* left: 0px; */
+    /* top: 0px; */
+    border-radius: 1px;
+     
+    
+    /* Sowingo_white */
+    
+    background: #FFFFFF;
+}
+
+#seperator{
+    /* position: absolute;
+    height: 1440px;
+    /* left: 0px;
+    right: 1439px; */
+    /* top: 56px;
+    width: 1px;
+    bottom: -1440px; */
+    /* Sow-Grey/400 */
+
+    position: absolute; 
+    /* height: 1440px; */
+    width: 1px;
+    /* left: 0px; */
+    top: -1330px;
+    border-radius: 0px;
+
+height: 2740px;
+/* left: 0px; */
+/* right: 1439px; */
+/* bottom: -1440px; */
+
+/* Sow-Grey/400 */
+
+background: #CAD2D8;
+transform: rotate(-90deg);
+
+
+    /* background: #CAD2D8;
+    transform: rotate(-90deg); */
+}
+#seperatorvetical{
+    position: absolute;
+    width: 1px;
+    right: 418px;
+    top: 0px;
+    bottom: 0px;
+    height: 30px;
+
+    /* Sow-Grey/400 */
+
+    background: #CAD2D8
+}
+
+#favourites {
+    position: absolute;
+    width: 75px;
+    height: 24px;
+    right: 310px;
+    top: calc(50% - 24px/2);
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    
+    /* Sowingo_charcoal */
+    
+    color: #4D586B;
+}
+
+#separator_vertical{
+
+
+    /* position: absolute; */
+    /* width: 1px; */
+    height: 30px;
+    left: 150px;
+    position: absolute;
+    width: 1px;
+    right: 1289px;
+    top: 10px;
+    bottom: 0px;
+    
+    /* Sow-Grey/400 */
+    
+    background: #CAD2D8;
+}
+
+#imageSearch{
+    position: absolute;
+    top: 10px;
+    left: 160px; 
+}
+
+#content{
+    position: absolute;
+    width: 797px;
+    height: 24px;
+    left: 199px;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Sow-Grey/500 */
+    border-color: white;
+    color: #ABB9C4;
+}
+#product_name{
+    position: absolute;
+    height: 48px;
+    left: 16px;
+    right: 16px;
+    top: 249px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* Sow-Grey/700 */
+
+    color: #4E6374;
+}
+#product{
+    position: relative;
+    height: 423px;
+    width: 267px;
+    /* left: 0px;
+    top: 0px; */
+    border-radius: 12px;
+    background: #FFFFFF;
+/* Sow-Grey/400 */
+
+    border: 1px solid #CAD2D8;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.box {
+    padding : 5px;
+    margin: 15px 15px 0 15px;
+    display : inline-block;
+    /* right: 1289px; */
+    /* min-width: 100px;
+    min-height: 50px; */
+    position: relative;
+    min-height: 423px;
+    min-width: 267px;
+    /* left: 0px;
+    top: 0px; */
+    /* border-radius: 12px; */
+    background: #FFFFFF;
+/* Sow-Grey/400 */
+
+    border: 1px solid #CAD2D8;
+    box-sizing: border-box;
+    border-radius: 12px;
+    /* background-color: red;         */
+}
+
+#product1{
+    position: relative;
+    height: 423px;
+    width: 267px;
+    /* left: 0px;
+    top: 0px; */
+    border-radius: 12px;
+    background: #FFFFFF;
+/* Sow-Grey/400 */
+
+    border: 1px solid #CAD2D8;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+#price_tag {
+    position: absolute;
+width: 63px;
+height: 20px;
+right: 108px;
+bottom: 82px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-align: right;
+
+/* Sow-Grey/700 */
+
+color: #4E6374;
+}
+
+#price {
+    position: absolute;
+    width: 76px;
+    height: 30px;
+    right: 16px;
+    bottom: 80px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    
+    text-align: right;
+    
+    /* Sow-Grey/700 */
+    
+    color: #4E6374;
+    }
+
+vectorcontainer{
+        /* container */
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 138px;
+        bottom: 16px;
+
+        /* Sow-Grey/700 */
+
+        border: 2px solid #4E6374;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+    
+
+#productimage1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 200px/2 + 0.5px);
+    top: 25px;
+
+    /* background: url(image.png); */
+}
+
+    
+#cart{
+position: absolute;
+width: 31px;
+height: 24px;
+right: -40px;
+top: calc(50% - 24px/2);
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Sowingo_charcoal */
+
+color: #4D586B;
+}
+
+#cartsign{
+position: relative;
+left: 83.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 29.17%;
+
+background: #FFFFFF;
+}
+
+#cartupdate{
+    
+position: absolute;
+/* left: 75%;
+right: -4.17%;
+top: -25%;
+bottom: 66.67%; */
+left: 83.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 29.17%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+
+/* Sowingo_white */
+
+color: #FFFFFF;
+}
+
+#promos{
+    height: 30px;
+    width: 85px;
+    left: 150px;
+    top: 184px;
+    border-radius: nullpx;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+
+    /* Sow-Grey/700 */
+
+    color: #4E6374;
+}
+
+#vectorsign{
+    position: absolute;
+    left: 75.33%;
+    /* right: 10.00%; */
+    top: 16%;
+    /* bottom: 29.04%;  */
+    /* height: 20px;
+    width: 18px; 
+    /* left: 2px; */
+    /* top: 3px;  */
+    /* border-radius: 0px; */
+    
+    /* Sow-Grey/700 */
+
+    /* background: #4E6374; */
+}
+
+
+
+#buttoncontainer{
+    position: absolute;
+    width: 106px;
+    height: 40px;
+    right: 16px;
+    bottom: 16px;
+
+    /* Sow-Blue/500 */
+
+    background: #398DE3;
+    border-radius: 6px;
+}
+
+#removebuttoncontainer{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    right: 180px;
+    bottom: 16px;
+
+    /* Sow-Blue/500 */
+
+    background: red;
+    border-radius: 6px;
+}
+
+
+buttonlabel{
+    position: absolute;
+    width: 74px;
+    height: 24px;
+    right: 26px;
+    bottom: 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    
+    /* identical to box height, or 171% */
+
+    text-align: center;
+
+    /* Sow-White/ */
+
+    color: #FFFFFF;
+}
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    position: relative;
+    left: 83.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 29.17%;
+}

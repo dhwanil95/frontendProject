@@ -1,0 +1,107 @@
+<!doctype html>
+<html ng-app="SowingoApp" >
+<head>
+  <meta charset="utf-8">
+  <title>Sowingo Front-end interview test - Dhwanil</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <div ng-controller="MainCtrl">
+      <div id="containertop">
+          <img id="image" src="../front-end-challenge/img/sowingo_logo.png" height="20" top="20" right="10" width="90">
+      </div>
+      <table id="nav_sticky">
+        <tr>
+          <td id="seperator"></td>
+         
+          <td id="separator_vertical"></td> 
+          <td>
+            <img src="../front-end-challenge/img/ic_search.png" id="imageSearch"/>
+            <input type="text" id="content" placeholder="Search here..." ng-model="searchBox"  />
+          </td>
+          
+          <td id="separator_vertical" style="left: 1180px"></td>
+          <td>
+            <img id="vectorsign"  ng-click="favoriteReport()" style="left: 1030px" src="../front-end-challenge/img/ic_favorite.png"/>
+            <label id="favourites"  ng-click="favoriteReport()">Favourites</label> 
+          </td>
+          <td id="separator_vertical"></td>
+          <td> 
+            <img id="cartsign" src="../front-end-challenge/img/button_cart.png">
+                  <label id="lblCartCount" runat="server" CssClass="badge badge-warning"  ForeColor="White"/>{{ cnt }}</a>
+                  <label id="cart" ng-click="cartReport()">Cart</label>
+          </td>
+          <td id="seperator" style="top: -1463px;height: 2940px;"></td>
+        </tr>
+      </table>
+      
+      <!-- <hr> -->
+      <div id="promos"  style="padding-left: 150px;">Promos</div>
+
+
+  <div style="padding-left: 150px;">     
+    <div class="box" ng-repeat="x in ocw | filter : searchBox : strict">
+      <table> 
+        <tr>
+            <td>
+                <img id="productimage1" src="{{ x.main_image }}"/>
+            </td>
+        </tr>
+        <tr id="product_name"> 
+            <td>
+                {{ x.subcategory.name }}
+            </td>
+        </tr>
+             <td id="price_tag" style="left:75px">
+                    Your Price
+             </td>
+             <td id="price">
+                 {{ x.vendor_inventory[0].list_price }}
+            </td>
+         <tr>
+            <td> 
+                <button id="removebuttoncontainer" ng-click="deleteItem(x)">Remove</button> 
+                <button id="favbtn" ng-click="addtoFav(x)" >
+                    <img  id="image1" src="{{ imageSrc }}"  style="left:12px; cursor: pointer;">
+                </button>
+                <button id= "buttoncontainer" ng-click="addItem(x)">Add to Cart</button>
+            </td>
+        </tr>
+    </table>
+  </div>
+
+    <p>Cart:</p>
+    <ul>
+      <li ng-repeat="item in cart">
+
+     <a href="#">{{item.subcategory.name}} | Count: {{item.count}}</a> 
+     
+     <a ng-click="deleteItem(item)">Remove</a> 
+  
+      </li>
+    </ul>
+    <p>Favourite:</p>
+    <ul>
+      <li ng-repeat="item in fav">
+        <a href="#">{{ item.subcategory.name }}</a> 
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+  </html>
